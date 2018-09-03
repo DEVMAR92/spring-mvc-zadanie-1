@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodaj Produkt</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30%;
+            background-color: lightcyan;
+            font-family: "AR JULIAN";
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Dodaj produkt</h1>
+
+    <form method="post" action="/add">
+        <input name="name" type="text" placeholder="nazwa">
+        <input name="price" type="number" placeholder="cena">
+        <select name="category">
+            <option>art. spożywcze</option>
+            <option>art. gosp. domowego</option>
+            <option>inne</option>
+        </select>
+        <input type="submit" value="dodaj" style="margin-left: 50px">
+    </form>
+</div>
+
+</body>
+</html>
